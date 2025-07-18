@@ -1,5 +1,7 @@
 import { Box } from '@mui/material'
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
+import Router from './Router/Router'
+
 
 
 export default function App() {
@@ -14,7 +16,7 @@ export default function App() {
     })
     return (
         <Box sx={{ flexGrow: 1 }}>
-            Hello
+             <Router isLoading={loading} />
       </Box>
    
   )
